@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perhitungan Bonus Pembelian</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Perhitungan Bonus Pembelian</h2>
+
+      <form id="formBelanja">
+        <div class="form-group">
+          <label for="namaPelanggan">Nama Pelanggan:</label>
+          <input
+            type="text"
+            id="namaPelanggan"
+            placeholder="Masukkan nama..."
+          />
+        </div>
+        <div class="form-group">
+          <label for="namaProduk">Nama Produk:</label>
+          <input type="text" id="namaProduk" placeholder="Masukkan produk..." />
+        </div>
+        <div class="form-group">
+          <label for="hargaProduk">Harga Produk (Rp):</label>
+          <input type="number" id="hargaProduk" placeholder="0" min="0" />
+        </div>
+        <div class="form-group">
+          <label for="jumlahBeli">Jumlah Pembelian:</label>
+          <input type="number" id="jumlahBeli" placeholder="0" min="1" />
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn-hitung">
+            Hitung
+          </button>
+          <button type="reset" class="btn-reset">
+            Reset
+          </button>
+        </div>
+      </form>
+
+      <div id="cardHasil" class="card-hasil">
+        <h3>Detail Transaksi</h3>
+        <div class="hasil-item">
+          <span>Nama Pelanggan:</span>
+          <span id="outNama">-</span>
+        </div>
+        <div class="hasil-item">
+          <span>Nama Produk:</span>
+          <span id="outProduk">-</span>
+        </div>
+        <div class="hasil-item">
+          <span>Total Belanja:</span>
+          <span id="outTotalBelanja">-</span>
+        </div>
+        <div class="hasil-item">
+          <span>Potongan:</span>
+          <span id="outPotongan">-</span>
+        </div>
+        <div class="hasil-item total">
+          <span>Total Bayar:</span>
+          <span id="outTotalBayar">-</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

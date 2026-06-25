@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 35px 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 420px;
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #34495e;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #2d3748;
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #74ebd5;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(116, 235, 213, 0.25);
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.btn-hitung {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+.btn-hitung:hover {
+  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-reset {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5253 100%);
+  box-shadow: 0 4px 10px rgba(238, 82, 83, 0.3);
+}
+
+.btn-reset:hover {
+  box-shadow: 0 6px 15px rgba(238, 82, 83, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Card Hasil Styling */
+.card-hasil {
+  margin-top: 30px;
+  padding: 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  box-shadow: 0 8px 20px rgba(56, 239, 125, 0.3);
+  display: none;
+  animation: fadeInDown 0.4s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-hasil h3 {
+  margin-top: 0;
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hasil-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hasil-item span:first-child {
+  opacity: 0.9;
+}
+
+.hasil-item span:last-child {
+  font-weight: 600;
+  text-align: right;
+}
+
+.hasil-item.total {
+  font-weight: 700;
+  font-size: 1.15em;
+  color: #ffffff;
+  border-top: 2px dashed rgba(255, 255, 255, 0.5);
+  padding-top: 12px;
+  margin-top: 12px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
